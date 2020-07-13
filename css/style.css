@@ -1,0 +1,57 @@
+*{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #63738A;
+	font-family: 'Roboto', sans-serif;
+	overflow-x: hidden;
+}
+
+
+.form-main h2{
+	color: #636363;
+	font-size: 30px;
+    font-weight: normal;
+	position: relative;
+}
+ .form-main h2:before, .form-main h2:after{
+	content: "";
+	position: absolute;
+	top: 50%;
+	width: 30%;
+	height: 2px;
+	background: #d4d4d4;
+}
+ .form-main h2:before{
+	left: 0;
+}
+.form-main h2:after{
+	right: 0;
+}
+
+.form-main p{
+    color: #636363;
+	font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0 !important;
+}
+
+@media(max-width: 470px){
+	.form-main p.card-text{
+		font-size: 10px;
+		font-weight: 700;
+	}
+	.form-main h2:before{
+	left: -20px;
+  }
+  .form-main h2:after{
+	right: -20px;
+  }
+  .form-check label{
+  	font-size: 13px;
+  }
+}
