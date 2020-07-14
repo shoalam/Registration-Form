@@ -44,6 +44,7 @@ body{
 	.form-main p.card-text{
 		font-size: 10px;
 		font-weight: 700;
+		text-align: left;
 	}
 	.form-main h2:before{
 	left: -20px;
@@ -51,7 +52,25 @@ body{
   .form-main h2:after{
 	right: -20px;
   }
-  .form-check label{
+  .form-check label {
   	font-size: 13px;
   }
+
+  input[type="checkbox"]{
+  	width: 16px;
+  	height: 10px;
+  }
+
+}
+
+@media(max-width: 400px){
+	.form-main h2:before{
+	width: 20%;	
+	left: 0px;
+  }
+  .form-main h2:after{
+  	width: 20%;	
+	right: 0px;
+  }
+  
 }
